@@ -1,0 +1,24 @@
+<h1 align="center">Perusahaan kami bergerak dibidang IT dan kuliner</h1>
+<table border="1">
+    <tr>
+        <th>Employee Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th colspan="2">Action</th>
+    </tr>
+    <%data.forEach(row=> { %>
+        <tr>
+            <td>
+                <%= row.employeeName %>
+            </td>
+            <td>
+                <%= row.position %>
+            </td>
+            <td>
+                <%= row.salary%>
+            </td>
+            <td><a href="/edit-employee/<%= row.id %> "><button>Edit</button></a></td>
+            <td><a href="/delete-employee <%=row.id %> "></a><button>Delete</button></a></td>
+        </tr>
+        <% }) %>
+</table>
