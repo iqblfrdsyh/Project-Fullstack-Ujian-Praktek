@@ -7,7 +7,7 @@ import employeeRoute from './routes/employeeRoute.js'
 import indexRoute from './routes/indexRoute.js'
 
 const app = express()
-const port = 3000
+const port = 5200
 
 app.use(express.static('./public/stylesheets'))
 app.use(express.static('./public/image'))
@@ -32,4 +32,7 @@ app.listen(port, () => {
     console.log(`Listening on http://127.0.0.1:${port}`)
 })
 
-// mongodb+srv://adiaz:nogova123@cluster0.gume9tn.mongodb.net/company?retryWrites=true&w=majority
+
+
+
+
