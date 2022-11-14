@@ -10,5 +10,11 @@ export const about = (req, res) => {
         layout: 'layouts/main-layout'
     })
 }
+export const addEmployee = (req, res) => {
+    res.render('addEmployee', {
+        title: 'Add Employee',
+        layout: 'layouts/main-layout'
+    })
+}
 
-export default { home, about }
+export default { home, about, addEmployee }

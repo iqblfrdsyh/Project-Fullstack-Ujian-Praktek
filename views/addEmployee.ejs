@@ -1,0 +1,37 @@
+<section class="addEmployee">
+    <div class="container">
+        <h2>Add Employee</h2>
+        <div class="box">
+            <table>
+                <form action="/profile" method="post">
+                    <tr>
+                        <td>
+                            <label for="employeeName">Employee Name</label>
+                        </td>
+                        <td>
+                            : <input type="text" name="employeeName" required
+                                oninvalid="this.setCustomValidity('Data cannot be empty')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="position">Position</label></td>
+                        <td>
+                            : <input type="text" name="position" required
+                                oninvalid="this.setCustomValidity('Data cannot be empty')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="skill">Skill</label></td>
+                        <td>
+                            : <input type="text" name="skill" required
+                                oninvalid="this.setCustomValidity('Data cannot be empty')">
+                        </td>
+                    </tr>
+                    <td>
+                        <input type="submit" value="Submit" id="btn">
+                    </td>
+                </form>
+            </table>
+        </div>
+    </div>
+</section>

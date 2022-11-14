@@ -4,7 +4,7 @@ const Employee = mongoose.Schema(
     {
         employeeName: String,
         position: String,
-        salary: Number,
+        skill: String,
     },
     {
         collection: "employees"

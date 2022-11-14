@@ -1,1 +1,11 @@
-GET http://127.0.0.1:3000/127.0.0.1:3000/profile
+GET http://127.0.0.1:3000/profile
+
+###
+POST http://127.0.0.1:3000/addEmployee
+Content-Type: application/json
+
+{
+    "employeeName" : "Iqbal",
+    "position" : "Frontend Developer",
+    "skill" : "HTML CSS JS"
+}
