@@ -1,7 +1,7 @@
-GET http://127.0.0.1:3000/profile
+GET http://127.0.0.1:5200/profile
 
 ###
-POST http://127.0.0.1:3000/addEmployee
+POST http://127.0.0.1:5200/profile
 Content-Type: application/json
 
 {
@@ -9,3 +9,6 @@ Content-Type: application/json
     "position" : "Frontend Developer",
     "skill" : "HTML CSS JS"
 }
+
+###
+DELETE http://127.0.0.1:5200/profile/

@@ -1,20 +1,20 @@
 import Employee from '../models/employeeModel.js'
 
-// get data
+// Function Get data
 export const getEmployee = async (req, res) => {
     try {
-        const employee = await Employee.find()
+        const employees = await Employee.find()
         res.render('profile', {
             title: 'Profile',
             layout: 'layouts/main-layout',
-            data: employee
+            data: employees
         })
     } catch (error) {
         res.status(500).json({ message: error.message })
     }
 }
 
-// Insert Data
+// Function Insert Data
 export const addEmployee = async (req, res) => {
     try {
         const newEmployee = new Employee({
@@ -29,7 +29,7 @@ export const addEmployee = async (req, res) => {
     }
 }
 
-// Delete Data 
+// Function Delete Data 
 export const deleteEmployee = async (req, res) => {
     try {
         const id = req.params.id
