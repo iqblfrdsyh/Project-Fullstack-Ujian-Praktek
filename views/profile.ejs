@@ -1,0 +1,52 @@
+<section class="profile">
+    <div class="container">
+        <div class="visionMission">
+            <div class="vision">
+                <h1>Vision</h1>
+                <p>Determined to become a center for the manufacture of software (website, mobile Android & iOS,
+                    desktop), hardware (automatic electronic devices) with international qualifications and
+                    competencies, as well as professional business orientation.</p>
+            </div>
+            <div class="mission">
+                <h1>Mission</h1>
+                <p>Developing the software industry (web based, Android & iOS mobile, desktop), hardware (automated
+                    electronic devices) with a business orientation and professional culture.
+                    Develop research that is integrated, continuous and clearly directed to increase competence in the
+                    software & hardware industry.
+                </p>
+            </div>
+        </div>
+        <div class="ourTeam">
+            <h1>Our <span style="color: slateblue;">Team</span></h1>
+            <div class="box">
+                <div class="btn">
+                    <a href="/addEmployee"><button>Add Employee</button></a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Position</th>
+                        <th>Skill</th>
+                        <th>Action</th>
+                    </tr>
+                    <%data.forEach((datas)=> { %>
+                        <tr>
+                            <td>
+                                <%= datas.employeeName %>
+                            </td>
+                            <td>
+                                <%= datas.position %>
+                            </td>
+                            <td>
+                                <%= datas.skill%>
+                            </td>
+                            <td>
+                                <a href="/deleteEmployee/<%= datas._id %>"><button>Delete</button></a>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

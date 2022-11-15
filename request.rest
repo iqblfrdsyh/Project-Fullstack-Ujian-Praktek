@@ -1,0 +1,14 @@
+GET http://127.0.0.1:5200/profile
+
+###
+POST http://127.0.0.1:5200/profile
+Content-Type: application/json
+
+{
+    "employeeName" : "Iqbal",
+    "position" : "Frontend Developer",
+    "skill" : "HTML CSS JS"
+}
+
+###
+DELETE http://127.0.0.1:5200/profile/
