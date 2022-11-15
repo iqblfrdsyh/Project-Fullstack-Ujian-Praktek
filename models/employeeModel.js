@@ -5,9 +5,6 @@ const Employee = mongoose.Schema(
         employeeName: String,
         position: String,
         skill: String,
-    },
-    {
-        collection: "employees"
     }
 )
 
