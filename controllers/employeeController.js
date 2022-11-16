@@ -9,6 +9,7 @@ export const getEmployee = async (req, res) => {
             layout: 'layouts/main-layout',
             data: employees
         })
+        // res.json(employees)
     } catch (error) {
         res.status(500).json({ message: error.message })
     }

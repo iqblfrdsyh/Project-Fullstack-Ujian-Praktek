@@ -6,5 +6,6 @@ const router = express.Router()
 router.get('/profile', getEmployee)
 router.post('/profile', addEmployee)
 router.get('/deleteEmployee/:id', deleteEmployee)
+// router.delete('/deleteEmployee/:id', deleteEmployee)
 
 export default router
